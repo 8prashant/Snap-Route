@@ -1,0 +1,141 @@
+body {
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 40px;
+    background-color: #4269f4;
+    color: #fff;
+  }
+  
+  .header h1 span {
+    color: #e74c3c;
+  }
+  
+  .instructions {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  svg {
+    display: block;
+    /* margin: 20px auto; */
+    border: 1px solid #ccc;
+  }
+  
+  .node {
+    fill: #3498db;
+    stroke-width: 2px;
+  }
+  
+  .link {
+    stroke: #020203;
+    stroke-width: 2px;
+  }
+  
+  .highlighted {
+    fill: #e74c3c;
+  }
+  
+  form {
+    /* text-align: center; */
+    margin-bottom: 20px;
+    /* margin-bottom: 15px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  /* css for the source and target form and shortest path button */
+  #shortestPathForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* Display items side by side */
+    align-items: stretch; /* Stretch items to fill the container */
+  }
+  
+  #shortestPathForm label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #shortestPathForm select {
+    flex: 1; /* Each select takes half of the screen */
+    padding: 8px;
+    margin-right: 5px; /* Add some spacing between the selects */
+    box-sizing: border-box;
+  }
+  #shortestPathForm button {
+    flex: 1; /* Button takes the complete width */
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #shortestPathForm button:hover {
+    background-color: #b92929;
+  }  
+
+  /* css for the graph box */
+  #graph-container {
+    display: inline-block; /* Keep the container size as small as the content */
+    border: 1px solid #ccc; /* Add a border to the container */
+  }
+
+
+  .shortest-path-nodes-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .shortest-path-node {
+    display: inline-block;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: #b92929;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shortest-path-node:hover {
+    background-color: #2980b9;
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dijkstra's Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Dijkstra's Algorithm Visualizer</h1>
+  <p>Explore and visualize the shortest path within an undirected graph!</p>
+</div>
+
+<form id="graphForm">
+  <label for="numNodes">Number of Nodes:</label>
+  <input type="number" id="numNodes" name="numNodes" min="2" required>
+
+  <label for="edges">Edges (node1-node2-weight, ...):</label>
+  <input type="text" id="edges" name="edges" required>
+
+  <button type="button" onclick="generateGraph()">Generate Graph</button>
+</form>
+
+<!-- New form for specifying source and target nodes -->
+<!-- New form for specifying source and target nodes -->
+<form id="shortestPathForm">
+  <label for="sourceNode">Source Node:</label>
+  <select id="sourceNode" name="sourceNode">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <!-- Add more options for each node manually -->
+  </select>
+
+  <label for="targetNode">Target Node:</label>
+  <select id="targetNode" name="targetNode">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <!-- Add more options for each node manually -->
+  </select>
+
+  <button type="button" onclick="findShortestPath()">Find Shortest Path</button>
+</form>
+
+
+<div class="instructions">
+  <h2>How to use:</h2>
+  <p>Enter the number of nodes and edges, click "Generate Graph," and then find the shortest path using "Find Shortest Path."</p>
+</div>
+
+<div id="graph-container" style="background-color: #f0f0f0">
+  <svg width="1450" height="600"></svg>
+</div>
+<div id="shortestPathNodes" class="shortest-path-nodes-container"></div>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
