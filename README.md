@@ -2,10 +2,6 @@
 
 Welcome to the Shortest Path Visualizer! This web application allows you to explore the shortest path in a graph using Dijkstra's algorithm. Visualize how the algorithm finds the shortest path between two nodes.
 
-## Demo
-
-Check out the live demo: [Shortest Path Visualizer](https://dulcet-donut-3d861c.netlify.app/)
-
 ## Screenshot
 
 ![Homepage](https://github.com/8prashant/shortest-path-visualizer/blob/main/Screenshot.png)
